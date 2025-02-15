@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +9,18 @@ body {
 }
 
 .container {
-  background: white;
+  background: #ffffff;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 320px;
+  width: 350px;
+}
+
+h2 {
+  color: #1e3c72;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .input-container {
@@ -32,23 +38,24 @@ input {
 }
 
 input:focus {
-  border-color: #6a11cb;
+  border-color: #1e3c72;
   outline: none;
 }
 
 button {
   padding: 10px 15px;
-  background: #6a11cb;
+  background: #1e3c72;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 8px;
   font-size: 14px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s;
 }
 
 button:hover {
-  background: #4a0ba5;
+  background: #16315b;
+  transform: scale(1.05);
 }
 
 ul {
@@ -61,20 +68,22 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #333;
+  background: #e3eaf9;
+  color: #1e3c72;
   font-weight: 500;
   margin-bottom: 8px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s;
 }
 
 li:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: #d0dcf4;
+  transform: scale(1.02);
 }
 
 .completed {
   text-decoration: line-through;
-  color: #999;
+  color: #888;
+  background: #bfc8e4;
 }
